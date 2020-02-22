@@ -1,0 +1,12 @@
+public void reverseString(char[] s) {
+		int length=s.length;
+		int begin=0;
+		int end=length-1;
+		while(begin<end){
+			s[begin]=(char) (s[begin]^s[end]);
+			s[end]=(char) (s[begin]^s[end]);
+			s[begin]=(char) (s[begin]^s[end]);
+			begin++;
+			end--;
+		}       
+    }
